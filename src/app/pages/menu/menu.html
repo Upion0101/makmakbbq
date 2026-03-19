@@ -11,7 +11,12 @@
 
       <div class="hero-actions">
         <a class="btn primary" [href]="phoneHref">Call to Order</a>
-        <a class="btn secondary" [href]="doordashUrl" target="_blank" rel="noopener">
+        <a
+          class="btn secondary"
+          [href]="doordashUrl"
+          target="_blank"
+          rel="noopener"
+        >
           Order on DoorDash
         </a>
       </div>
@@ -23,11 +28,17 @@
   <div class="container">
     <div class="section-card menu-image-card">
       <div class="menu-image-wrap">
-        <img
-          src="/assets/menu/menu.png"
-          alt="Mak-Mak BBQ full menu"
-          class="menu-image"
-        />
+        <picture>
+          <source
+            media="(max-width: 700px)"
+            srcset="/assets/menu/menu_mobile.png"
+          />
+          <img
+            src="/assets/menu/menu_desktop.jpg"
+            alt="Mak-Mak BBQ full menu"
+            class="menu-image"
+          />
+        </picture>
       </div>
     </div>
   </div>

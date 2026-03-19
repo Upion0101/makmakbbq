@@ -14,11 +14,8 @@
     </a>
 
     <nav class="nav" [class.open]="mobileOpen">
+      <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a>
       <a routerLink="/menu" routerLinkActive="active" (click)="closeMenu()">Menu</a>
-      <a routerLink="/catering" routerLinkActive="active" (click)="closeMenu()">Catering</a>
-      <a routerLink="/thestreatery" routerLinkActive="active" (click)="closeMenu()">The Streatery</a>
-      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
-
       <a class="cta" routerLink="/catering" (click)="closeMenu()">
         Request Catering
       </a>
